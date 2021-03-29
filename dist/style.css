@@ -1,0 +1,97 @@
+body{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+table{
+    width: 50%;
+    margin:20px;
+    border-collapse: collapse;
+    border-color: midnightblue;
+}
+
+#contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+td, th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.addForm{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    margin: 5px 5px;
+}
+
+input{
+    width: 40%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit]{
+    background-color: midnightblue;
+    color: whitesmoke;
+    padding: 7px 5px; 
+    margin: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  
+    width: 5em;
+    
+}
+
+button[type=submit]:hover{
+    background-color: navy;
+}
+
+button{
+    background-color: lightblue;
+    padding: 6px 3px; 
+    margin: 6px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  
+    width: 4em;
+}
+
+.modal{
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5);
+}
+
+.content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.header {
+    padding: 2px 4px;
+    background-color:midnightblue;
+    color: white;
+}
