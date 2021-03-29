@@ -120,24 +120,29 @@ export default class App extends React.Component {
             </div>
           </div>
         </div>
-        <div className="addForm">
-          <input
-            name="name"
-            type="text"
-            value={this.state.name}
-            placeholder="Name.."
-            onChange={this.handleChange}
-          />
-          <input
-            name="number"
-            type="number"
-            value={this.state.number}
-            placeholder="Number.."
-            onChange={this.handleChange}
-          />
-          <button type="submit" onClick={this.handleSubmit}>
-            ➕ Add
-          </button>
+        <div style={{ border: "1px solid gray" }}>
+          <div className="header">
+            <h3>Add New Contact</h3>
+          </div>
+          <div className="addForm">
+            <input
+              name="name"
+              type="text"
+              value={this.state.name}
+              placeholder="Name.."
+              onChange={this.handleChange}
+            />
+            <input
+              name="number"
+              type="number"
+              value={this.state.number}
+              placeholder="Number.."
+              onChange={this.handleChange}
+            />
+            <button type="submit" onClick={this.handleSubmit}>
+              ➕ Add
+            </button>
+          </div>
         </div>
 
         {contacts.length ? (
